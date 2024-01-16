@@ -28,6 +28,17 @@ def products(request):
 	context = {'products':products}
 	return render(request, 'accounts/products.html', context)
 
+def load(request):
+    load = Product.objects.all()
+
+    # Assuming 'load.html' is in your 'templates/accounts/' directory
+    with open('accounts/templates/accounts/load.html', 'r') as html_file:
+        html_content = html_file.read()
+
+    # You can include your dynamic content here if needed
+    # For example: html_content = html_content.replace('{{ load }}', str(load))
+
+    return render(request, 'accounts/load.html')
 def customer(request, pk):
 	customer = Customer.objects.get(id=pk)
 	orders = customer.order_set.all()

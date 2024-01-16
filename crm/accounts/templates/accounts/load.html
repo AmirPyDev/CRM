@@ -1,0 +1,165 @@
+{% extends 'accounts/main_template.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AdWins</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        #about-us {
+            padding: 0px 0;
+
+        }
+
+     /*   .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+//
+        .team-member img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+            margin-right: 10px; /* Adjust the margin-right to make images larger from the right */
+        }
+*/
+        h2,
+        h3,
+        h4 {
+            color: #343a40;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+   
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .col-md-6 {
+                width: 100%; /* Updated this line to make sure the section takes full width */
+            }
+
+            .column {
+                width: 100%;
+                display: block;
+            }
+
+            .card {
+                width: 100%; /* Updated this line to make sure cards take full width */
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+        <div id="about-us" class="container">
+           <div class="row">
+                <h2 class="mt-5 mb-4">About Us</h2>
+            <p>Welcome to AdWins, our premier destination for cutting-edge Customer Relationship Management (CRM)
+                solutions. Our mission is to revolutionize the way businesses connect with and understand their
+                customers.</p>
+            <p>Our mission is to help customers and admins achieve transparency with their employees and customers,
+                enabling them to monitor the progress of tasks efficiently.</p>
+
+            <h3 class="mt-4">Meet the Team</h3>
+           
+                <div class="col-md-4 mb-4">
+                    <div class="card-body text-center">
+                        <img src="{% static 'images/hamid.jpg' %}" class="card-img-top" alt="Team Member 1">
+                        <h5 class="card-title">Hamid Shaikh</h5>
+                       <p class="card-text">Java Developer<br>hamid@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-body text-center">
+                        <img src="{% static 'images/amir.jpg' %}" class="card-img-top" alt="Team Member 2">
+                        <h5 class="card-title">Muhammad Aamir</h5>
+                        <p class="card-text">Python Developer<br>
+                            amir@gmail.com</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4 mb-4">
+                    <div class="card-body text-center">
+                        <img src="{% static 'images/sardar.jpg' %}" class="card-img-top" alt="Team Member 3">
+                        <h5 class="card-title">Sardar Ali</h5>
+                        <p class="card-text">News Anchor<br>
+                            sardar@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Add more team members as needed -->
+           
+
+            <h3 class="mt-4">Contact Us</h3>
+            <p>We would love to hear from you! Feel free to contact us at shaikhhamid659@gmail.com</p>
+
+           </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOai1jCp9jgeDfsBp4eX7jkJKxWSVxLXfLqlaVJoH3aD/9QpHfCerL+qutqJb"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy2n4lOD9s9M6F5lBZt5D3Z/dXQF2O+J1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+{% endblock content %}
+
+
+
+
+
+
+
